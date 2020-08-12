@@ -25,7 +25,7 @@ while byte:
         count = 0
         filenum += 1
 
-    byte = file.read(1)
+    byte = file.read(MAXBYTES)
     
 
 print("done")
