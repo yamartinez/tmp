@@ -1,4 +1,10 @@
-FILENAME = 'file.exe'
+import sys
+
+if (len(sys.argv)<2):
+    print("No file provided")
+    exit()
+
+FILENAME = sys.argv[1]
 MAXBYTES = 5000000
 file = open(FILENAME,'rb')
 

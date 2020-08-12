@@ -1,5 +1,11 @@
-OUTPUT_FILENAME = 'program.exe'
-INPUT_FILE_COUNT = 1
+import sys
+
+if (len(sys.argv)<3):
+    print("No file provided")
+    exit()
+
+OUTPUT_FILENAME = sys.argv[1]
+INPUT_FILE_COUNT = sys.argv[2]
 
 outfile = open(OUTPUT_FILENAME,'ab+')
 
