@@ -14,7 +14,7 @@ filenum = 0
 
 print("Started")
 
-byte = file.read(1)
+byte = file.read(MAXBYTES)
 
 while byte:
     count += 1
@@ -26,5 +26,6 @@ while byte:
         filenum += 1
 
     byte = file.read(1)
+    
 
 print("done")
