@@ -17,7 +17,7 @@ print("Started")
 byte = file.read(MAXBYTES)
 
 while byte:
-    count += 1
+    count += MAXBYTES
     with open((str(filenum)+".out"),'ab+') as f:
         f.write(byte)
 
